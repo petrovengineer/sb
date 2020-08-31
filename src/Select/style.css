@@ -8,9 +8,6 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 10;
 }
-.select{
-
-}
 .btn, .items{
     cursor: pointer;
     position: relative;
@@ -25,8 +22,32 @@
     min-height: 32px;
     font-size: 16px;
     min-width: 200px;
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-item-close{
+    padding: 0 5px;
+    border-radius: 4px;
+    background-color: slategray;
+    color: white;
+    margin-left: 2px;
+    margin-right: 4px;
+}
+.btn-separator{
+    align-self: stretch;
+    background-color: rgb(204, 204, 204);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 1px;
+    box-sizing: border-box;
+    width: 1px;
+}
+.btn-right{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: space-between;
 }
 .btn-selected{
     border: 2px solid DeepSkyBlue;
@@ -36,6 +57,13 @@
 }
 .btn-text{
     padding: 2px 8px;
+}
+.btn-arrow{
+    fill: rgb(204, 204, 204);
+    padding: 8px;
+    height: 14px;
+    /* width: 16px; */
+    transform: rotate(90deg);
 }
 .items{
     display: flex;
